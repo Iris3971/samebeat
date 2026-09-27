@@ -1,0 +1,11 @@
+{"recv": 1790431724.419, "raw": {"type": "data", "diff": false, "payload": {}}}
+{"recv": 1790431724.442, "raw": {"type": "data", "diff": false, "payload": {"artist": "IU (아이유)", "timestampEpochMicros": 1790429433444207, "title": "Blueming", "bundleIdentifier": "com.tencent.QQMusicMac", "elapsedTimeMicros": 0, "album": "Love poem", "durationMicros": 217000000, "playbackRate": 1, "playing": false}}}
+{"recv": 1790431798.904, "raw": {"type": "data", "diff": true, "payload": {"elapsedTimeMicros": 209000000, "timestampEpochMicros": 1790431798881348, "playbackRate": null}}}
+{"recv": 1790431799.021, "raw": {"type": "data", "diff": true, "payload": {"playing": true}}}
+{"recv": 1790431799.407, "raw": {"type": "data", "diff": true, "payload": {"timestampEpochMicros": 1790431799398799, "playbackRate": 1}}}
+{"recv": 1790431807.389, "raw": {"type": "data", "diff": true, "payload": {"timestampEpochMicros": 1790431807377545, "elapsedTimeMicros": 0}}}
+{"recv": 1790431807.762, "raw": {"type": "data", "diff": true, "payload": {"playing": false}}}
+{"recv": 1790431807.805, "raw": {"type": "data", "diff": true, "payload": {"playing": true}}}
+{"recv": 1790431829.976, "raw": {"type": "data", "diff": true, "payload": {"timestampEpochMicros": 1790431829964113, "elapsedTimeMicros": 21000000}}}
+{"recv": 1790431834.968, "raw": {"type": "data", "diff": true, "payload": {"timestampEpochMicros": 1790431834960397, "elapsedTimeMicros": 27000000}}}
+{"recv": 1790431838.407, "raw": {"type": "data", "diff": true, "payload": {"playing": false}}}

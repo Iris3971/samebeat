@@ -1,0 +1,16 @@
+# SameBeat 独立部署：独立容器、独立数据目录、独立 env 文件，与 OB 不共享任何东西。
+services:
+  samebeat:
+    build: .
+    container_name: samebeat
+    restart: unless-stopped
+    env_file: .env            # 只在服务器上创建，内容见 .env.example；不进仓库
+    environment:
+      SAMEBEAT_DB: /data/samebeat.db
+    volumes:
+      - samebeat-data:/data   # 命名卷：首次创建时继承镜像里 /data 的属主，非 root 用户可写
+    ports:
+      - "127.0.0.1:8766:8000"  # 只监听本机，对外由 Cloudflare 隧道转发
+
+volumes:
+  samebeat-data:

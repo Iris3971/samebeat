@@ -1,0 +1,21 @@
+# SameBeat Mac Agent 配置
+# 安装脚本会把它复制到 ~/.config/samebeat/config.toml；改完不用重启，Agent 每 5 秒检查一次。
+
+# 服务器的 /ingest 地址，必须是 https://（本机测试可用 http://127.0.0.1）。
+# 留空 = dry-run：不联网，只把要上报的内容写进日志 ~/Library/Logs/samebeat/agent.log
+server_url = ""
+
+# 与服务器约定的 Bearer token
+token = ""
+
+# 分享开关：false 时完全不上报
+sharing_enabled = true
+
+# media-control 的位置（brew install media-control 后的默认路径）
+media_control = "/opt/homebrew/bin/media-control"
+
+# 事件安静多少秒后才判断是否上报（吸收切歌瞬间的抖动）
+debounce_seconds = 0.8
+
+# 心跳间隔（秒）
+heartbeat_seconds = 30

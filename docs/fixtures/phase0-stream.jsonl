@@ -1,0 +1,39 @@
+{"recv": 1790415054.964, "raw": {"type": "data", "diff": false, "payload": {}}}
+{"recv": 1790415240.214, "raw": {"type": "data", "diff": false, "payload": {"artist": "郑秀文", "timestampEpochMicros": 1790415239861700, "title": "终身美丽", "bundleIdentifier": "com.tencent.QQMusicMac", "elapsedTimeMicros": 0, "album": "Shocking Pink", "durationMicros": 206000000, "playing": true}}}
+{"recv": 1790415241.545, "raw": {"type": "data", "diff": true, "payload": {"elapsedTimeMicros": 1000000, "timestampEpochMicros": 1790415241538883, "playbackRate": 1}}}
+{"recv": 1790415309.698, "raw": {"type": "data", "diff": true, "payload": {"playing": false}}}
+{"recv": 1790415467.108, "raw": {"type": "data", "diff": true, "payload": {"playing": true}}}
+{"recv": 1790415467.754, "raw": {"type": "data", "diff": true, "payload": {"timestampEpochMicros": 1790415467738220, "elapsedTimeMicros": 70000000}}}
+{"recv": 1790415481.538, "raw": {"type": "data", "diff": true, "payload": {"timestampEpochMicros": 1790415481528051, "elapsedTimeMicros": 150000000}}}
+{"recv": 1790415517.399, "raw": {"type": "data", "diff": true, "payload": {"timestampEpochMicros": 1790415517391742, "elapsedTimeMicros": 0}}}
+{"recv": 1790415517.76, "raw": {"type": "data", "diff": true, "payload": {"playing": false}}}
+{"recv": 1790415517.778, "raw": {"type": "data", "diff": true, "payload": {"playing": true}}}
+{"recv": 1790415517.955, "raw": {"type": "data", "diff": false, "payload": {"artist": "Daft Punk", "timestampEpochMicros": 1790415517947125, "title": "Digital Love", "bundleIdentifier": "com.tencent.QQMusicMac", "elapsedTimeMicros": 0, "album": "Discovery", "durationMicros": 301000000, "playbackRate": 1, "playing": true}}}
+{"recv": 1790415581.824, "raw": {"type": "data", "diff": true, "payload": {"playing": false}}}
+{"recv": 1790415605.47, "raw": {"type": "data", "diff": false, "payload": {}}}
+{"recv": 1790415605.883, "raw": {"type": "data", "diff": false, "payload": {"artist": "OTHER_APP_PRIVATE_METADATA", "timestampEpochMicros": 1790415605876737, "title": "OTHER_APP_PRIVATE_METADATA", "bundleIdentifier": "org.example.otherplayer", "elapsedTimeMicros": 0, "album": "OTHER_APP_PRIVATE_METADATA", "durationMicros": 4284000000, "playbackRate": 1, "playing": true}}}
+{"recv": 1790415655.489, "raw": {"type": "data", "diff": false, "payload": {}}}
+{"recv": 1790415655.494, "raw": {"type": "data", "diff": false, "payload": {"artist": "Daft Punk", "timestampEpochMicros": 1790415517947125, "title": "Digital Love", "bundleIdentifier": "com.tencent.QQMusicMac", "elapsedTimeMicros": 0, "album": "Discovery", "durationMicros": 301000000, "playbackRate": 1, "playing": true}}}
+{"recv": 1790415655.495, "raw": {"type": "data", "diff": true, "payload": {"timestampEpochMicros": 1790415655459717, "elapsedTimeMicros": 64000000}}}
+{"recv": 1790415693.923, "raw": {"type": "data", "diff": true, "payload": {"playing": false}}}
+{"recv": 1790415701.303, "raw": {"type": "data", "diff": true, "payload": {"playing": true}}}
+{"recv": 1790415701.952, "raw": {"type": "data", "diff": true, "payload": {"timestampEpochMicros": 1790415701937793, "elapsedTimeMicros": 103000000}}}
+{"recv": 1790415738.858, "raw": {"type": "data", "diff": false, "payload": {}}}
+{"recv": 1790415739.27, "raw": {"type": "data", "diff": false, "payload": {"artist": "OTHER_APP_PRIVATE_METADATA", "timestampEpochMicros": 1790415739266066, "title": "OTHER_APP_PRIVATE_METADATA", "bundleIdentifier": "org.example.otherplayer", "elapsedTimeMicros": 105000000, "album": "OTHER_APP_PRIVATE_METADATA", "durationMicros": 4284000000, "playbackRate": 1, "playing": true}}}
+{"recv": 1790415801.55, "raw": {"type": "data", "diff": true, "payload": {"playing": false}}}
+{"recv": 1790415801.55, "raw": {"type": "data", "diff": true, "payload": {"elapsedTimeMicros": 167609832, "timestampEpochMicros": 1790415801528610, "playbackRate": 0}}}
+{"recv": 1790415802.176, "raw": {"type": "data", "diff": false, "payload": {}}}
+{"recv": 1790415802.182, "raw": {"type": "data", "diff": false, "payload": {"artist": "Daft Punk", "timestampEpochMicros": 1790415701937793, "title": "Digital Love", "bundleIdentifier": "com.tencent.QQMusicMac", "elapsedTimeMicros": 103000000, "album": "Discovery", "durationMicros": 301000000, "playbackRate": 1, "playing": true}}}
+{"recv": 1790415825.088, "raw": {"type": "data", "diff": true, "payload": {"playing": false}}}
+{"recv": 1790415855.697, "raw": {"type": "data", "diff": true, "payload": {"elapsedTimeMicros": 226000000, "timestampEpochMicros": 1790415855692095, "playbackRate": null}}}
+{"recv": 1790415855.838, "raw": {"type": "data", "diff": true, "payload": {"playing": true}}}
+{"recv": 1790415856.452, "raw": {"type": "data", "diff": true, "payload": {"elapsedTimeMicros": 227000000, "timestampEpochMicros": 1790415856444951, "playbackRate": 1}}}
+{"recv": 1790415858.724, "raw": {"type": "data", "diff": true, "payload": {"timestampEpochMicros": 1790415858717924, "elapsedTimeMicros": 60000000}}}
+{"recv": 1790415864.755, "raw": {"type": "data", "diff": true, "payload": {"timestampEpochMicros": 1790415864747158, "elapsedTimeMicros": 65000000}}}
+{"recv": 1790415880.278, "raw": {"type": "data", "diff": true, "payload": {"playing": false}}}
+{"recv": 1790415880.301, "raw": {"type": "data", "diff": true, "payload": {"playing": true}}}
+{"recv": 1790415880.412, "raw": {"type": "data", "diff": false, "payload": {"artist": "IU (아이유)", "timestampEpochMicros": 1790415880406331, "title": "Blueming", "bundleIdentifier": "com.tencent.QQMusicMac", "elapsedTimeMicros": 0, "album": "Love poem", "durationMicros": 217000000, "playbackRate": 1, "playing": true}}}
+{"recv": 1790415883.995, "raw": {"type": "data", "diff": true, "payload": {"timestampEpochMicros": 1790415883989693}}}
+{"recv": 1790415884.219, "raw": {"type": "data", "diff": true, "payload": {"playing": false}}}
+{"recv": 1790415884.235, "raw": {"type": "data", "diff": true, "payload": {"playing": true}}}
+{"recv": 1790415884.569, "raw": {"type": "data", "diff": false, "payload": {"artist": "Daft Punk", "timestampEpochMicros": 1790415884561692, "title": "Digital Love", "bundleIdentifier": "com.tencent.QQMusicMac", "elapsedTimeMicros": 0, "album": "Discovery", "durationMicros": 301000000, "playbackRate": 1, "playing": true}}}
