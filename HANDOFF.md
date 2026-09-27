@@ -1,6 +1,6 @@
-# SameBeat v0.1.0 — release-preparation checkpoint
+# SameBeat v0.1.0 — release checkpoint
 
-Date: 2026-09-27. Status: **local candidate prepared; not published or deployed**.
+Date: 2026-09-27. Status: **source repository published; v0.1.0 tag and GitHub Release pending**.
 
 ## Evidence and source inventory
 
@@ -37,8 +37,8 @@ Phase3 completion is supported by implemented code and historical Claude accepta
 - The maintainer additionally confirmed an independent clean build and running/healthy candidate container with a temporary volume, random test credentials, no published ports and complete cleanup. Production SameBeat stayed healthy and OB kept running; this is separate from the automated tmpfs evidence.
 - Mac real reboot/autostart and ChatGPT live MCP end-to-end revalidation passed according to the maintainer's explicit report. Claude retains Phase3 historical acceptance evidence. The production deployment was not changed or compared byte-for-byte to the candidate by this task.
 - Final local tests: 17 Agent + 38 Server/MCP = **55 passed**. Dependency consistency passed, secret scan and private-value comparison found no matches.
-- Hosted CI has not run. The checklist lists it before publication, but there is no explicit non-waivable hard-blocker requirement in the original PLAN or repository policy. It remains an open checklist decision; local tests are not represented as hosted CI. No remote/commit exists, so remote required checks were not inspected.
-- Repository/attribution review, first commit and eventual tag/publication remain deliberate future actions. No functional blocker was found in this acceptance pass. No public repository, tag or hosted release was created.
+- The reviewed source was committed and pushed to `Iris3971/samebeat`. GitHub Actions `Checks` passed on the initial public commit `bc342ff367ea`; the final documentation-only commit must pass the same workflow before tagging.
+- Repository/attribution review and the first commit are complete. No functional blocker was found; the v0.1.0 tag and GitHub Release remain pending.
 
 Some existing Server tests emit unclosed SQLite ResourceWarnings under Python 3.13; tests pass, but fixture cleanup can be improved separately. Natural loop detection remains heuristic and cannot perfectly distinguish a manual seek at the very end. v0.1 is single-user, has no OAuth, and its stored history has no automatic retention policy.
 
@@ -130,12 +130,12 @@ For a future prebuilt image, app bundle or wheel bundle, audit the **actual arti
 
 ### Outcome
 
-README Credits added; this audit appended to existing HANDOFF; release checklist updated. No application code, dependency versions or SameBeat LICENSE changed, and no unnecessary license-copy directory was created. Subsequent build/runtime and maintainer-reported reboot/ChatGPT checks passed. Hosted CI remains an unresolved pre-publication checklist item, followed by repository review and authorized publication actions. The candidate archive and checksum are refreshed to match the reviewed documentation.
+README Credits added; this audit appended to existing HANDOFF; release checklist updated. No application code, dependency versions or SameBeat LICENSE changed, and no unnecessary license-copy directory was created. Subsequent build/runtime, maintainer-reported reboot/ChatGPT checks and hosted CI on the initial public commit passed. The final documentation-only revision still requires its CI rerun before tagging.
 
 ### Final acceptance follow-up
 
 See docs/RELEASE_CHECKLIST.md for actual commands, evidence sources and the CI gate analysis. The final candidate archive/checksum are synchronized with the reviewed staged documentation. This task updates documentation only; no application/build/dependency source or workflow changes were needed. Tests and secret scans were rerun after setting up a fresh local environment.
 
-Changed documentation in this acceptance pass: README.md, HANDOFF.md, docs/RELEASE_CHECKLIST.md, docs/RELEASE_NOTES_v0.1.0.md, docs/QUICKSTART.md, docs/PLAN.md, docs/phase1-agent.md and docs/phase3-mcp.md. The source archive and SHA256SUMS outside the repository were refreshed; no new repository files were added. All 37 candidate files remain staged for the initial commit, without unstaged changes. This is a prepared candidate, not a committed or published release.
+Changed documentation in this acceptance pass: README.md, HANDOFF.md, docs/RELEASE_CHECKLIST.md, docs/RELEASE_NOTES_v0.1.0.md, docs/QUICKSTART.md, docs/PLAN.md, docs/phase1-agent.md and docs/phase3-mcp.md. The source archive and SHA256SUMS outside the repository were refreshed; no new repository files were added. All 37 source files were included in the initial public commit.
 
-The final continuation reused this same workspace and existing candidate. Only README.md, HANDOFF.md and docs/RELEASE_CHECKLIST.md received additional maintainer-evidence wording; no repository, workspace, runtime code or remote resources were created. Final tests and scans were rerun locally before the readiness report.
+The final continuation reused this same workspace and existing candidate. The GitHub repository was created by the maintainer, and the reviewed initial commit was pushed without modifying production resources. Final tests and scans were rerun locally before publication.

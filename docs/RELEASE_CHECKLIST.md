@@ -19,16 +19,16 @@
 
 - [x] Build the current Dockerfile from clean public source on the target VPS, without cache; isolated build-only acceptance passed on 2026-09-27.
 - [x] Isolated container startup and actual Docker healthcheck: healthy, with disposable credentials, no published ports, network=none, and tmpfs-only test data; 12 internal smoke checks passed.
-- [ ] Run hosted CI on the final source revision.
+- [x] Run hosted CI on the release source revision; initial public commit passed, and the final documentation-only revision is revalidated before tagging.
 - [x] Maintainer independently confirmed clean candidate build (exit 0), running/healthy container with a disposable volume, complete cleanup and production service continuity.
 - [x] Mac reboot/login autostart: maintainer confirmed a real reboot with no manual Agent launch on 2026-09-27.
 - [x] ChatGPT MCP end-to-end revalidation: maintainer confirmed live QQ Music state, song and progress after that reboot; Claude retains historical Phase3 acceptance.
-- [ ] Review the staged public source and license attribution; select repository owner/name.
-- [ ] Commit reviewed files; verify a clean worktree and rescan the exact tagged tree.
+- [x] Review the public source and license attribution; repository selected as `Iris3971/samebeat`.
+- [ ] Commit final documentation; verify a clean worktree and rescan the exact tagged tree.
 - [ ] Create v0.1.0 tag from the validated commit; build the final archive from that tag.
 - [ ] Publish release with docs/RELEASE_NOTES_v0.1.0.md, replacing draft-status text only after remaining gates pass.
 
-The prepared archive is a **candidate**, not evidence that the remaining release gates passed. No push, public release or production change has been performed.
+The source repository and initial commit are public. The tag and GitHub Release remain pending; no production change has been performed.
 
 If distributing a prebuilt image or bundled dependencies, audit the exact image/packages and retain their licenses, copyright/NOTICE material and any required source-access information before publishing that additional artifact. The current candidate contains source only.
 
@@ -99,9 +99,9 @@ Record this as **PASS, maintainer-provided evidence**. It is a distinct volume-b
 
 ### Hosted CI: exact gate interpretation
 
-The existing checklist places `Run hosted CI on the final source revision` under `Before the final tag and publication`. It therefore remains an **open pre-publication checklist item**. However, neither the original PLAN nor this repository specifies that a hosted CI result is an explicit non-waivable v0.1.0 hard blocker, and no `must pass`/required-status-check policy is defined in repository files. The workflow runs tests on push/pull_request; a workflow's existence alone does not prove remote branch protection. This local repository currently has no remote and no commit, so no hosted required-check configuration or CI result was verified.
+The checklist places `Run hosted CI on the final source revision` under `Before the final tag and publication`. The maintainer's publication instruction explicitly made a green hosted-CI run a v0.1.0 release gate even though the original PLAN and repository policy did not define it as non-waivable. GitHub Actions `Checks` passed on initial public commit `bc342ff367ea`; the documentation-only follow-up is rerun before the tag is created.
 
-Hosted CI was introduced during release preparation, rather than inherited from the original product acceptance criteria. This task does not silently waive or remove it and does not label local tests as hosted CI. Before publication, either run it on the intended remote revision or have the maintainer explicitly resolve its checklist status. No repository was created or published to obtain CI.
+Hosted CI was introduced during release preparation rather than inherited from the original product acceptance criteria. It was not waived: the public workflow ran successfully, independently of the local test record.
 
 ### Final local verification and readiness
 
@@ -110,6 +110,6 @@ Hosted CI was introduced during release preparation, rather than inherited from 
 - `python -m unittest discover -s server -p 'test_*.py'`: **38 passed**.
 - Total **55/55 passed**; existing SQLite fixture ResourceWarnings do not fail tests.
 - `python scripts/check_release.py`: **0 findings**. Exact-match comparison against local configured ingest credential/address and documented VPS address: **0 files matched**, values never printed. Production secret files were not read.
-- Reviewed working/staged diff and status; no application, dependency, Dockerfile or workflow change in this acceptance pass. Documentation updates are staged with the existing initial candidate, with no commit/tag/remote created. The candidate archive and checksum are refreshed from that staged source; extracted content is checked against it and rescanned.
+- Reviewed working/staged diff and status; no application, dependency, Dockerfile or workflow change in this publication update. The initial commit was pushed and passed hosted CI; the exact tag commit is rescanned and revalidated before tagging.
 
-Functional acceptance requested here has passed. Remaining publication work: resolve the open hosted-CI item, select/review the target repository and attribution, then commit/tag/publish only when authorized. No new functional or secret-scan blocker was found. Public image redistribution still requires its own artifact/license audit; this candidate remains source-only.
+Functional acceptance requested here has passed. Remaining publication work: commit this final documentation, confirm its hosted CI run, then create the authorized tag and source-only GitHub Release. No new functional or secret-scan blocker was found. Public image redistribution still requires its own artifact/license audit.
